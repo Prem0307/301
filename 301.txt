@@ -1,0 +1,24 @@
+Title:-Pen Robot final
+Goal of the Project:
+In class 290, we have attached a distance sensor with the robotic arm so that it can detect the moving obje
+ct. In this project, we will add a distance sensor to our pen robot. Additionally, we will program it to draw a pattern on the ground.
+
+Story:
+Since Aayan went on an industrial visit from his school, he has been trying to make a Pen robot. This pen robot should be able to draw a pattern on its own.
+
+
+Specific Tasks to complete the Project:
+Observe the boilerplate code - a distance sensor is already added to the robot for your convenience.
+
+Open the halo_controller.py. Here, the basic code is already added which initializes all the devices, such as - pen, motors, distance sensor etc.
+
+
+We can set the ink color of the pen by using the setInkColor() method. The setInkColor() method has two parameters - color and density. The color of the ink is written in the 0xRRGGBB hexadecimal format. The density ranges from 0 to 1.
+Here is an example-
+
+
+Write code in the halo_controller.py to add the following functionalities:
+A method named halo() which will move the robotic arm towards the floor and stop it when the pen touches the ground. Then, it will draw a circle with the pen
+A method named moveback() which will lift the arm up a little once a circle is completed.
+Call these functions in the main loop.
+Additionally, you can write code to call these functions multiple times to draw multiple circles.
